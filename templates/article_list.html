@@ -1,0 +1,14 @@
+    <html>
+        <head>
+            <title>NkTrans</title>
+        </head>
+        <body>
+        {% for post in articles %}
+            <div>
+                <p>published: {{ post.article_published_date }}</p>
+                <h1><a href="">{{ post.article_title }}</a></h1>
+                <p>{{ post.article_text|linebreaks }}</p>
+            </div>
+        {% endfor %}
+        </body>
+    </html>
